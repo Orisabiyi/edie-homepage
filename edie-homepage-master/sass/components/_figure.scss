@@ -1,0 +1,24 @@
+.figure {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  &__picture {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    display: block;
+    object-fit: cover;
+  }
+
+  &__caption {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

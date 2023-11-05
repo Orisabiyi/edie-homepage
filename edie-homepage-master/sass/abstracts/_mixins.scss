@@ -1,0 +1,13 @@
+@mixin flex-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and (max-width: 37.5rem) {
+      @content
+    }
+  }
+}

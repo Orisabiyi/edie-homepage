@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+
+  <script defer src="https://kit.fontawesome.com/b8b2b324ae.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+
+  <link rel="shortcut icon" href="asset/devchallenges.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Edie Homepage</title>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <h2 class="heading-2 nav__title">Edie</h2>
+    <ul class="nav__collection">
+      <li class="heading-3 u-font-weight-500 nav__item">
+        <a href="#home" class="nav__link">Home</a>
+      </li>
+      <li class="heading-3 u-font-weight-500 nav__item">
+        <a href="#services" class="nav__link">Services</a>
+      </li>
+      <li class="heading-3 u-font-weight-500 nav__item">
+        <a href="#works" class="nav__link">Our Works</a>
+      </li>
+      <li class="heading-3 u-font-weight-500 nav__item">
+        <a href="#clients" class="nav__link">Clients</a>
+      </li>
+      <li class="heading-3 u-font-weight-500 nav__item">
+        <a href="#contact" class="nav__link">Contact</a>
+      </li>
+    </ul>
+    <picture class="nav__picture">
+      <source media="(max-width: 600px)" srcset="asset/devchallenges.png">
+      <img alt="hamburger menu bar" srcset="asset/devchallenges.png">
+    </picture>
+  </nav>
+
+  <header class="header" id="home">
+    <p class="paragraph header__paragraph header__paragraph--1">Unhappy with your website?</p>
+    <h1 class="heading-1 header__heading">
+      <span class="heading--main">We create beautiful</span>
+      <span class="heading--sub">and fast web services</span>
+    </h1>
+    <div class="header__picture">
+      <img srcset="asset/heroImage.jpg" alt="hero image" class="header__hero-img">
+    </div>
+    <h1 class="heading-1 header__heading">
+      <span class="heading--main">Story, emotion</span>
+      <span class="heading--sub">and purpose</span>
+    </h1>
+    <p class="paragraph header__paragraph header__paragraph--2">
+      We help transform your ideas into real world applications that will outperform your toughest competition and help
+      you achieve your strategic goals in short period of time.
+    </p>
+    <form action="#" class="form">
+      <label for="email" class="form__handler">Want us to contact you?</label>
+      <input type="email" id="email" placeholder="Email" class="form__email" required>
+      <input type="submit" value="Join" class="form__submit">
+    </form>
+  </header>
+
+  <main class="main">
+    <section id="services" class="section__services">
+      <h2 class="heading-2 u-font-weight-500 u-margin-bottom-42">
+        <span class="heading--main">We offer high</span>
+        <span class="heading--sub">demand services</span>
+      </h2>
+      <div class="section__services-dept">
+        <div class="card card--1">
+          <div class="card__icon">
+            <i class="fa-solid fa-pen card__icons"></i>
+          </div>
+          <h3 class="heading-3 u-font-weight-700 card__heading">UI/UX Design</h3>
+          <p class="paragraph--16 card__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.
+          </p>
+          <a href="#" class="btn">Get started</a>
+        </div>
+        <div class="card card--2">
+          <div class="card__icon">
+            <i class="fa-solid fa-code card__icons"></i>
+          </div>
+          <h3 class="heading-3 u-font-weight-700 card__heading">Front End</h3>
+          <p class="paragraph--16 card__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.
+          </p>
+          <a href="#" class="btn">Get started</a>
+        </div>
+        <div class="card card--3">
+          <div class="card__icon">
+            <i class="fa-solid fa-bars-progress card__icons"></i>
+          </div>
+          <h3 class="heading-3 u-font-weight-700 card__heading">Back End</h3>
+          <p class="paragraph--16 card__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis
+            turpis.
+          </p>
+          <a href="#" class="btn">Get started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section__works">
+      <h2 class="heading-2 u-margin-bottom-42 u-font-weight-500">
+        <span class="heading--main">Good design means</span>
+        <span class="heading--sub">good business</span>
+      </h2>
+      <div class="work__card-section">
+        <div class="work__card--1">
+          <img src="asset/smarthome.jpg" alt="smarthome-image" class="work__card-img">
+          <p class="paragraph-14">Full stack application</p>
+          <h3 class="heading-3 u-font-weight-500">Smart home dashboard</h3>
+        </div>
+        <div class="work__card--2">
+          <img src="asset/onboard.png" alt="onboard-image" class="work__card-img">
+          <p class="paragraph-14">UX/UI design</p>
+          <h3 class="heading-3 u-font-weight-500">Onboard application</h3>
+        </div>
+      </div>
+      <div class="work__card-section">
+        <div class="work__card--1 u-margin-top-105">
+          <img src="asset/booking.png" alt="booking-website-image" class="work__card-img">
+          <p class="paragraph-14">Mobile application</p>
+          <h3 class="heading-3 u-font-weight-500">Booking system</h3>
+        </div>
+        <div class="work__card--2 u-margin-top-154">
+          <img src="asset/juice-product.png" alt="juice-website-image" class="work__card-img">
+          <p class="paragraph-14">Front End application</p>
+          <h3 class="heading-3 u-font-weight-500">Juice product homepage</h3>
+          <a href="#" class="see-more">see more <div class="arrow">&rarr;</div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__teams">
+      <div class="team__content">
+        <p class="paragraph">Meet the team</p>
+        <h2 class="heading-2 u-font-weight-500 u-width-280">We are chilled and laid back team</h2>
+        <p class="paragraph-16 u-width-280">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+      </div>
+      <div class="team__images">
+        <div class="team__picture">
+          <img src="asset/person3.png" alt="person1" class="team__icon">
+        </div>
+        <div class="team__image">
+          <div class="team__picture">
+            <img src="asset/person1.png" alt="person1" class="team__icon">
+          </div>
+          <div class="team__picture">
+            <img src="asset/person2.png" alt="person1" class="team__icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients" class="section__clients">
+      <h2 class="heading-2 u-font-weight-500 u-width-800">
+        “Fast and outstanding results. Edie understands their customer’s needs. They have a young and talented team.”
+      </h2>
+      <figure class="figure">
+        <div class="figure__picture">
+          <img src="asset/person4.png" alt="person4" class="figure__img">
+        </div>
+        <figcaption class="figure__caption">
+          <h3 class="heading-3">Carlos Tran</h3>
+          <p class="paragraph">The Decorate Gatsby</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <footer id="contact" class="footer">
+      <ul class="footer__collection">
+        <li class="paragraph footer__item">
+          <a href="#home" class="footer__link">Home</a>
+        </li>
+        <li class="paragraph footer__item">
+          <a href="#services" class="footer__link">Services</a>
+        </li>
+        <li class="paragraph footer__item">
+          <a href="#works" class="footer__link">Our Works</a>
+        </li>
+        <li class="paragraph footer__item">
+          <a href="#clients" class="footer__link">Clients</a>
+        </li>
+        <li class="paragraph footer__item">
+          <a href="#contact" class="footer__link">Contact</a>
+        </li>
+      </ul>
+      <div class="footer__company">
+        <h2 class="heading-2 nav__title footer__heading">Edie</h2>
+        <div class="footer__icons">
+          <img src="asset/instagram.svg" alt="instagram" class="footer__icon">
+          <img src="asset/linkedin.svg" alt="linkedin" class="footer__icon">
+          <img src="asset/twitter.svg" alt="twitter" class="footer__icon">
+        </div>
+      </div>
+      <div class="footer__form">
+        <form action="#" class="form">
+          <label for="email" class="form__handler">Want us to contact you?</label>
+          <input type="email" id="email" placeholder="Email" class="form__email" required>
+          <input type="submit" value="Join" class="form__submit">
+        </form>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>

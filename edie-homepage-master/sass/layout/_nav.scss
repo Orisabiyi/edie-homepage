@@ -1,0 +1,66 @@
+.nav {
+  @extend %flex-display;
+  padding: var(--padding-all);
+
+  &__title {
+    font-family: "Heebo", sans-serif;
+    font-weight: 800;
+    margin-right: auto;
+  }
+
+  &__collection {
+    @extend %flex-display;
+    gap: 6rem;
+
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__item {
+    position: relative;
+    list-style: none;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 2px;
+
+      position: absolute;
+      top: 3rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    &:hover {
+      color: var(--secondary-color);
+
+      &::after {
+        width: 100%;
+        background-color: var(--secondary-color);
+        transition: all .7s;
+      }
+    }
+  }
+
+  &__link {
+
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: unset;
+    }
+  }
+
+  &__picture {
+    width: 0;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+      width: auto;
+    }
+  }
+}

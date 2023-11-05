@@ -1,0 +1,38 @@
+.section {
+  &__services {
+    padding: var(--padding-all);
+
+    &-dept {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3.6rem;
+
+      @include respond(phone) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+
+  &__works {
+    padding: var(--padding-all);
+  }
+
+  &__teams {
+    padding: 9rem 12rem;
+    @include flex-display;
+
+    @include respond(phone) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+  }
+
+  &__clients {
+    padding: 9rem 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+}

@@ -1,0 +1,40 @@
+.card {
+  padding: 8rem 4rem;
+
+  &__icon {
+    @include flex-display;
+
+    width: 6.7rem;
+    height: 6.7rem;
+    padding: 1.5rem;
+    border-radius: 1.6rem;
+    background-color: var(--secondary-color);
+  }
+
+  &__icons {
+    color: #fff;
+    font-size: 3rem;
+  }
+
+  &__heading {
+    margin: 3.5rem 0 2.4rem 0;
+  }
+
+  &__paragraph {
+    margin-bottom: 4rem;
+  }
+
+  &:hover {
+    border-radius: 2.4rem;
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.108);
+    transition: all .3s;
+  }
+
+  &:hover .btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    transition: all .3s;
+  }
+}

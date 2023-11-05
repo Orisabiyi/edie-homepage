@@ -1,0 +1,49 @@
+.u-font-weight-700 {
+  font-weight: 700;
+}
+
+.u-font-weight-500 {
+  font-weight: 500;
+}
+
+.u-margin-bottom-42 {
+  margin-bottom: 4.2rem;
+
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.u-margin-top-105 {
+  margin-top: 10.5rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+
+.u-margin-top-154 {
+  margin-top: 15.4rem;
+
+  @include respond(phone) {
+    margin-top: 0;
+  }
+}
+
+.u-width-280 {
+  width: 28rem;
+}
+
+.u-width-800 {
+  width: 80rem;
+
+  @include respond(phone) {
+    width: 35rem;
+  }
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.513);
+}

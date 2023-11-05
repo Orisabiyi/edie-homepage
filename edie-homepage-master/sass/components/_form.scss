@@ -1,0 +1,45 @@
+.form {
+  font-size: 1.8rem;
+  border-radius: 1.2rem;
+  width: 38rem;
+  transform: translateX(calc(27.7rem - 6rem));
+
+  @include respond(phone) {
+    transform: translateX(calc(6rem - 4rem));
+  }
+
+  &__handler {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--gray-3);
+    margin-bottom: .9rem;
+  }
+
+  &__email {
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--gray-3);
+    background-color: var(--gray-6);
+
+    outline: 0;
+    width: 35rem;
+    border: none;
+    border-radius: inherit;
+    padding: 1.5rem 2rem;
+  }
+
+  &__submit {
+    font-size: inherit;
+    font-family: inherit;
+    color: #fff;
+    background-color: var(--secondary-color);
+
+    outline: 0;
+    width: 9.4rem;
+    border: none;
+    border-radius: inherit;
+    padding: 1.1rem 2.7rem;
+
+    transform: translate(25.2rem, -4.7rem);
+  }
+}

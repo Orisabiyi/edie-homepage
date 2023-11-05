@@ -1,0 +1,14 @@
+:root {
+  --gray-1: #333;
+  --gray-2: #4F4F4F;
+  --gray-3: #828282;
+  --gray-4: #E0E0E0;
+  --gray-6: #F2F2F2;
+  --secondary-color: #2D9CDB;
+  --tertiary-color: #100E1D;
+  --padding-all: 3rem 6rem;
+
+  @include respond(phone) {
+    --padding-all: 1.5rem 3rem;
+  }
+}
