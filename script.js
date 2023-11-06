@@ -2,8 +2,8 @@
 
 const navElement = document.querySelector('.nav');
 const header = document.querySelector('.header')
-const navHeight = navElement.getBoundingClientRect();
-console.log(navHeight);
+const navHeight = `-${navElement.getBoundingClientRect().height}px`;
+console.log(getComputedStyle(navElement).padding);
 
 navElement.addEventListener('click', function (e) {
   e.preventDefault();
@@ -17,7 +17,6 @@ navElement.addEventListener('click', function (e) {
 const navOnScroll = function () {
   const navFunc = function (entries, observer) {
     const [entry] = entries;
-    console.log(entry);
     if (!entry.isIntersecting) {
       navElement.classList.add('fixed');
     } else {
@@ -26,12 +25,12 @@ const navOnScroll = function () {
 
 
   }
-  const navObserve = new IntersectionObserver(navFunc, {
+  const observing = new IntersectionObserver(navFunc, {
     root: null,
     threshold: 0,
-    rootMargin: '-91px'
+    rootMargin: navHeight
   })
-  navObserve.observe(header);
+  observing.observe(header);
 }
 
 navOnScroll();

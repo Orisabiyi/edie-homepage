@@ -114,7 +114,12 @@ body {
 .fixed {
   position: fixed;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.513); }
+  z-index: 5;
+  padding: 2rem 4rem !important;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(2.5rem);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  transition: all 1s ease-in-out; }
 
 .btn:link, .btn:visited {
   display: inline-block;
@@ -204,7 +209,7 @@ body {
     border: none;
     border-radius: inherit;
     padding: 1.1rem 2.7rem;
-    transform: translate(25.2rem, -4.7rem); }
+    transform: translate(25.2rem, -5.3rem); }
 
 .footer {
   color: #fff;
