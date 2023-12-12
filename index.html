@@ -9,10 +9,10 @@
   <script defer src="https://kit.fontawesome.com/b8b2b324ae.js" crossorigin="anonymous"></script>
   <script defer src="script.js"></script>
 
-  <link rel="shortcut icon" href="asset/devchallenges.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
 
+  <link rel="shortcut icon" href="asset/devchallenges.png" />
+  <link rel="stylesheet" href="css/style.css" />
   <title>Edie Homepage</title>
 </head>
 
@@ -38,8 +38,7 @@
       </li>
     </ul>
     <picture class="nav__picture">
-      <source media="(max-width: 600px)" srcset="asset/devchallenges.png">
-      <img alt="hamburger menu bar" srcset="asset/devchallenges.png">
+      <i class="fa-solid fa-bars nav__bar"></i>
     </picture>
   </nav>
 
@@ -115,26 +114,35 @@
         <span class="heading--main">Good design means</span>
         <span class="heading--sub">good business</span>
       </h2>
-      <div class="work__card-section">
+      <div class="work__card">
         <div class="work__card--1">
-          <img src="asset/smarthome.jpg" alt="smarthome-image" class="work__card-img">
+          <picture class="work__picture">
+            <img src="asset/smarthome.jpg" alt="smarthome-image" class="work__card-img">
+          </picture>
           <p class="paragraph-14">Full stack application</p>
           <h3 class="heading-3 u-font-weight-500">Smart home dashboard</h3>
         </div>
         <div class="work__card--2">
-          <img src="asset/onboard.png" alt="onboard-image" class="work__card-img">
+          <picture class="work__picture">
+            <img src="asset/onboard.png" alt="onboard-image" class="work__card-img">
+          </picture>
           <p class="paragraph-14">UX/UI design</p>
           <h3 class="heading-3 u-font-weight-500">Onboard application</h3>
         </div>
       </div>
-      <div class="work__card-section">
+
+      <div class="work__card">
         <div class="work__card--1 u-margin-top-105">
-          <img src="asset/booking.png" alt="booking-website-image" class="work__card-img">
+          <picture class="work__picture">
+            <img src="asset/booking.png" alt="booking-website-image" class="work__card-img">
+          </picture>
           <p class="paragraph-14">Mobile application</p>
           <h3 class="heading-3 u-font-weight-500">Booking system</h3>
         </div>
         <div class="work__card--2 u-margin-top-154">
-          <img src="asset/juice-product.png" alt="juice-website-image" class="work__card-img">
+          <picture class="work__picture">
+            <img src="asset/juice-product.png" alt="juice-website-image" class="work__card-img">
+          </picture>
           <p class="paragraph-14">Front End application</p>
           <h3 class="heading-3 u-font-weight-500">Juice product homepage</h3>
           <a href="#" class="see-more">see more <div class="arrow">&rarr;</div></a>
@@ -144,7 +152,7 @@
 
     <section class="section__teams">
       <div class="team__content">
-        <p class="paragraph">Meet the team</p>
+        <p class="paragraph--18">Meet the team</p>
         <h2 class="heading-2 u-font-weight-500 u-width-280">We are chilled and laid back team</h2>
         <p class="paragraph-16 u-width-280">
           Lorem ipsum dolor sit amet consectetur adipisicing elit.

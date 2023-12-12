@@ -11,6 +11,7 @@
       @include respond(phone) {
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
       }
     }
   }
@@ -24,6 +25,7 @@
     @include flex-display;
 
     @include respond(phone) {
+      padding: 3rem;
       flex-direction: column;
       gap: 5rem;
     }

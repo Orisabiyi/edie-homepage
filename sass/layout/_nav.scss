@@ -63,4 +63,9 @@
       width: auto;
     }
   }
+
+  &__bar {
+    font-size: 3rem;
+    color: var(--tertiary-color);
+  }
 }

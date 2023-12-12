@@ -7,12 +7,12 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 10px = 1rem
   box-sizing: border-box;
   scroll-behavior: smooth;
 
   @include respond(phone) {
-    font-size: 50%;
+    font-size: 50%; // 8px = 1rem
   }
 }
 
@@ -23,4 +23,8 @@ body {
   font-style: normal;
   color: var(--gray-2);
   line-height: 1.5;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }

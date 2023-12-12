@@ -7,6 +7,11 @@
   justify-content: space-between;
   align-items: flex-start;
 
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
   &:hover {
     background: linear-gradient(-45deg, #100E1D, #0e7148, #1d1360, #2D9CDB);
     background-size: 400% 400%;
