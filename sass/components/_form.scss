@@ -1,7 +1,7 @@
 .form {
   font-size: 1.8rem;
   border-radius: 1.2rem;
-  width: 38rem;
+  width: 30%;
   transform: translateX(calc(27.7rem - 6rem));
 
   @include respond(phone) {
@@ -9,7 +9,7 @@
   }
 
   &__handler {
-    display: block;
+    display: inline-block;
     font-size: 1.4rem;
     color: var(--gray-3);
     margin-bottom: .9rem;
@@ -22,7 +22,7 @@
     background-color: var(--gray-6);
 
     outline: 0;
-    width: 35rem;
+    width: 90%;
     border: none;
     border-radius: inherit;
     padding: 1.5rem 2rem;
@@ -40,6 +40,11 @@
     border-radius: inherit;
     padding: 1.1rem 2.7rem;
 
-    transform: translate(25.2rem, -4.7rem);
+    transform: translate(23rem, -4.7rem);
+
+    @include respond(phone) {
+      display: none;
+      width: 0;
+    }
   }
 }

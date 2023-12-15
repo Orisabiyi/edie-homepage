@@ -67,6 +67,11 @@
   &__form {
     .form {
       transform: translateX(0rem);
+      width: 80%;
+
+      &__email {
+        width: 78%;
+      }
     }
   }
 }
