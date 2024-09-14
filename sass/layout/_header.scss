@@ -4,12 +4,18 @@
   padding: var(--padding-all);
   overflow-x: hidden;
 
+  @include respond(phone) {
+    height: auto;
+    padding: 6rem 3rem;
+  }
+
   &__heading,
   &__paragraph {
     transform: translateX(calc(27.7rem - 6rem));
 
     @include respond(phone) {
       transform: translateX(calc(6rem - 4rem));
+      padding: 0 6rem;
     }
   }
 
@@ -23,11 +29,12 @@
   }
 
   &__paragraph--2 {
-    width: 34rem;
+    width: 40%;
     margin: 4.2rem 0;
 
     @include respond(phone) {
       margin: 2rem 0;
+      width: 80%;
     }
   }
 

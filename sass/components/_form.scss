@@ -1,11 +1,15 @@
 .form {
   font-size: 1.8rem;
-  border-radius: 1.2rem;
   width: 30%;
-  transform: translateX(calc(27.7rem - 6rem));
+  border-radius: 1.2rem;
+  transform: translateX(60%);
+
+  position: relative;
 
   @include respond(phone) {
     transform: translateX(calc(6rem - 4rem));
+    padding: 0 6rem;
+    width: 60rem;
   }
 
   &__handler {
@@ -40,11 +44,14 @@
     border-radius: inherit;
     padding: 1.1rem 2.7rem;
 
-    transform: translate(23rem, -4.7rem);
+    position: absolute;
+    top: 50%;
+    right: 11%;
+    transform: translateY(-15%);
 
     @include respond(phone) {
-      display: none;
-      width: 0;
+      left: 65%;
+      transform: translateY(-12%);
     }
   }
 }
